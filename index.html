@@ -6,9 +6,9 @@
 
 <title>Prisma Econômico</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link href="https://googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -91,7 +91,7 @@ body{
 /* MENU */
 
 nav{
-    position:relative; 
+    position:sticky; 
     top:0;
     z-index:999;
     background:rgba(10,20,35,0.94);
@@ -210,7 +210,30 @@ main{
     font-size:0.98rem;
 }
 
-/* HIGHLIGHT SECTION */
+/* DIALOGOS SECTION */
+.dialogos-section {
+    margin-top: 110px;
+    background: white;
+    border-radius: 22px;
+    padding: 50px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+}
+
+.dialogo-item {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.dialogo-text h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    color: #132238;
+    margin-bottom: 10px;
+}
+
+/* HIGHLIGHT SECTION (SOBRE) */
 
 .highlight{
     margin-top:110px;
@@ -245,9 +268,10 @@ main{
 }
 
 .highlight p{
-    max-width:850px;
+    max-width:950px;
     line-height:2;
     color:rgba(255,255,255,0.88);
+    margin-bottom: 20px;
 }
 
 /* FOOTER */
@@ -263,11 +287,17 @@ footer{
 footer h3{
     font-family:'Cormorant Garamond', serif;
     font-size:2rem;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
 footer p{
     color:rgba(255,255,255,0.7);
+    line-height: 1.8;
+}
+
+footer a {
+    color: #d7b98a;
+    text-decoration: none;
 }
 
 /* RESPONSIVO */
@@ -288,6 +318,11 @@ footer p{
 
 .highlight-content{
     padding:45px;
+}
+
+.dialogo-item {
+    flex-direction: column;
+    gap: 20px;
 }
 
 }
@@ -360,8 +395,9 @@ O Prisma Econômico busca interpretar a dinâmica econômica contemporânea por 
 <nav>
     <div class="nav-container">
         <a href="#">Início</a>
-        <a href="#areas">Artigos</a>
-        <a href="#areas">Pesquisas</a>
+        <a href="#artigos">Artigos</a>
+        <a href="#pesquisas">Pesquisas</a>
+        <a href="#dialogos">Diálogos</a>
         <a href="#sobre">Sobre</a>
         <a href="#contato">Contato</a>
     </div>
@@ -369,12 +405,13 @@ O Prisma Econômico busca interpretar a dinâmica econômica contemporânea por 
 
 <main>
 
-<section class="section-title" id="areas">
+<!-- SEÇÃO DE ARTIGOS -->
+<section class="section-title" id="artigos">
 
 <h2>Áreas de Análise</h2>
 
 <p>
-O Prisma Econômico reúne artigos, pesquisas e reflexões voltadas à compreensão da economia contemporânea, articulando diferentes traditions teóricas, interpretações históricas e debates sobre desenvolvimento.
+O Prisma Econômico reúne artigos, pesquisas e reflexões voltadas à compreensão da economia contemporânea, articulando diferentes tradições teóricas, interpretações históricas e debates sobre desenvolvimento.
 </p>
 
 </section>
@@ -443,14 +480,60 @@ Mudança estrutural, industrialização, desigualdade, restrição externa e est
 
 </section>
 
+<!-- SEÇÃO DE PESQUISAS -->
+<section class="section-title" id="pesquisas" style="margin-top: 110px;">
+    <h2>Destaques Acadêmicos & Iniciação Científica</h2>
+    <p>
+        Espaço dedicado ao compartilhamento de relatórios, resumos expandidos e papers resultantes de investigações acadêmicas e projetos de iniciação científica vigentes na UFMT.
+    </p>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <div class="card-top"></div>
+        <div class="card-content">
+            <h3>Políticas Públicas e Setor Público</h3>
+            <p>Acompanhamento de dados macroeconômicos regionais, avaliação de impacto de gastos governamentais e dinâmicas de desenvolvimento municipal.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-top"></div>
+        <div class="card-content">
+            <h3>Estrutura Produtiva de MT</h3>
+            <p>Estudos focados nas cadeias agroindustriais, infraestrutura logística e a inserção de Mato Grosso nas redes globais de comércio.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SEÇÃO DE DIÁLOGOS (ENTREVISTAS) -->
+<section id="dialogos" class="dialogos-section">
+    <div class="section-title" style="margin-bottom: 30px;">
+        <h2>Diálogos & Conjuntura</h2>
+        <p>Conversas, debates e entrevistas com professores, especialistas e profissionais da área sobre os rumos da economia local e global.</p>
+    </div>
+    <div class="dialogo-item">
+        <div class="dialogo-text">
+            <h3>Perspectivas do Setor Público em MT</h3>
+            <p style="color: #555; line-height: 1.8;">Um espaço dedicado a registrar painéis de discussão e entrevistas com pesquisadores e gestores, focando nas transformações estruturais da economia mato-grossense e nos desafios da gestão fiscal contemporânea.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SEÇÃO SOBRE -->
 <section class="highlight" id="sobre">
 
 <div class="highlight-content">
 
-<h2>Produção Acadêmica e Reflexão Crítica</h2>
+<h2>Quem Está por Trás do Prisma?</h2>
 
 <p>
-O Prisma Econômico busca construir um espaço de divulgação científica e debate intelectual voltado à interpretação crítica da economia contemporânea, aproximando pesquisa acadêmica, conjuntura econômica e desenvolvimento.
+    Olá! Meu nome é <strong>Polyana F. Gnutzmann</strong>. Sou graduanda em Ciências Econômicas pela Universidade Federal de Mato Grosso (UFMT), com colação de grau prevista para este ano, e uma verdadeira entusiasta da ciência econômica e de seu potencial de transformação social.
+</p>
+<p>
+    Minha trajetória acadêmica é marcada por uma atuação ativa na comunidade universitária: atuo como extensionista focada no Setor Público, desenvolvo pesquisas de Iniciação Científica e faço parte do Centro Acadêmico, defendendo a integração e o crescimento da nossa comunidade discente.
+</p>
+<p>
+    O <strong>Prisma Econômico</strong> nasceu do desejo de unir essa vivência e criar um canal dinâmico de divulgação científica. O intuito deste site é simplificar debates complexos, conectar a teoria acadêmica à conjuntura real e abrir espaço para que alunos, professores e egressos da Faculdade de Economia da UFMT mostrem a força de suas produções intelectuais.
 </p>
 
 </div>
@@ -459,9 +542,17 @@ O Prisma Econômico busca construir um espaço de divulgação científica e deb
 
 </main>
 
+<!-- SEÇÃO DE CONTATO -->
 <footer id="contato">
-    <h3>Prisma Econômico</h3>
-    <p>© 2026 Prisma Econômico – Faculdade de Economia da Universidade Federal de Mato Grosso (UFMT)</p>
+    <h3>Contato</h3>
+    <p>Tem alguma sugestão, artigo para submeter ou interesse em cooperar com o projeto?</p>
+    <p style="margin-top: 15px; font-weight: 500;">
+        <strong>Polyana F. Gnutzmann</strong><br>
+        E-mail: <a href="mailto:polyana.g.fernandes@gmail.com">polyana.g.fernandes@gmail.com</a>
+    </p>
+    <p style="margin-top: 40px; font-size: 0.85rem; color: rgba(255,255,255,0.4);">
+        © 2026 Prisma Econômico – Faculdade de Economia da Universidade Federal de Mato Grosso (UFMT)
+    </p>
 </footer>
 
 </body>
