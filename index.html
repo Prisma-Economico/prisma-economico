@@ -33,10 +33,10 @@ body{
 
 .hero{
     position:relative;
-    min-height:100vh;
+    height: 60vh; /* Mudado de min-height: 100vh para limitar a altura */
     background-image:url('banner.jpg');
     background-size:cover;
-    background-position:center;
+    background-position: center top; /* Mudado para focar no topo da foto */
     display:flex;
     align-items:center;
     justify-content:center;
@@ -64,9 +64,9 @@ body{
 
 .hero h1{
     font-family:'Cormorant Garamond', serif;
-    font-size:7rem;
+    font-size: 4.5rem; /* Reduzido de 7rem para caber em uma linha */
     font-weight:700;
-    line-height:1;
+    line-height:1.2;
     margin-bottom:25px;
     letter-spacing:1px;
     text-shadow:0 8px 30px rgba(0,0,0,0.4);
@@ -91,7 +91,7 @@ body{
 /* MENU */
 
 nav{
-    position:sticky;
+    position:relative; /* Mudado de sticky para tirar o conflito visual inicial */
     top:0;
     z-index:999;
     background:rgba(10,20,35,0.94);
