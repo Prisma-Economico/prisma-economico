@@ -308,6 +308,72 @@ footer a {
 
 }
 
+.card-link{
+    text-decoration:none;
+    color:inherit;
+}
+
+.card{
+    position:relative;
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    transition:0.35s;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    border:1px solid rgba(0,0,0,0.05);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,0.12);
+}
+
+.card-category{
+    color:#b48a56;
+    font-size:0.85rem;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.card h3{
+    font-family:'Cormorant Garamond', serif;
+    font-size:2rem;
+    margin-bottom:18px;
+    color:#132238;
+}
+
+.card p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.read-more{
+    color:#132238;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.card:hover .read-more{
+    color:#b48a56;
+}
+
+.badge-new{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:#132238;
+    color:white;
+    padding:7px 14px;
+    border-radius:30px;
+    font-size:0.72rem;
+    font-weight:700;
+    letter-spacing:1px;
+}
+    
 @media(max-width:768px){
 
 .hero{
@@ -471,6 +537,34 @@ Mudança estrutural, industrialização, desigualdade, restrição externa e est
 </div>
 </div>
 
+<a href="densidade-capitalista.html" class="card-link">
+
+<div class="card new-post">
+
+<span class="badge-new">NOVO</span>
+
+<div class="card-category">
+Artigos
+</div>
+
+<h3>
+Densidade capitalista no século XXI
+</h3>
+
+<p>
+Uma análise sobre financeirização, plataformas digitais,
+concentração econômica e as novas formas de acumulação
+no capitalismo contemporâneo.
+</p>
+
+<span class="read-more">
+Ler artigo →
+</span>
+
+</div>
+
+</a>
+    
 </section>
 
 <!-- SEÇÃO ARTIGOS E PESQUISAS -->
