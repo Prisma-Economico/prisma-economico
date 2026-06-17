@@ -438,7 +438,51 @@ footer a {
     color: #132238;
     margin-bottom: 20px;
 }
-    
+
+.rede-container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.rede-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.rede-card{
+    background:#ffffff;
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.10);
+    transition:.3s;
+}
+
+.rede-card:hover{
+    transform:translateY(-3px);
+}
+
+.rede-card h2{
+    color:#1f4f82;
+}
+
+.rede-links{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.rede-links a{
+    text-decoration:none;
+    color:#1f4f82;
+    font-weight:600;
+}
+
+.rede-links a:hover{
+    text-decoration:underline;
+} 
+
 </style>
 </head>
 
@@ -468,6 +512,7 @@ O Prisma Econômico busca interpretar a dinâmica econômica contemporânea por 
         <a href="#artigos">Caderno Econômico</a>
         <a href="#pesquisas">Artigos e Pesquisas</a>
         <a href="#dialogos">Diálogos</a>
+        <a href="rede-fe.html">Rede FE</a>
         <a href="#sobre">Sobre</a>
         <a href="#contato">Contato</a>
     </div>
