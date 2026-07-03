@@ -1,350 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Prisma Econômico</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+/* =========================
+   BASE
+========================= */
 
-html{
-    scroll-behavior:smooth;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
+    font-family:'Inter',sans-serif;
     background:#f5f5f3;
     color:#1b1b1b;
-    font-family:'Inter', sans-serif;
-    overflow-x:hidden;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero{
-    position:relative;
-    height: 60vh; 
-    background-image:url('banner.jpg');
-    background-size:cover;
-    background-position: center top; 
+    height:60vh;
+    background:url('banner.jpg') center/cover;
     display:flex;
     align-items:center;
     justify-content:center;
+    position:relative;
 }
 
 .hero::before{
     content:"";
     position:absolute;
     inset:0;
-    background:linear-gradient(
-        to bottom,
-        rgba(2,10,25,0.65),
-        rgba(4,15,35,0.72)
-    );
+    background:rgba(0,0,0,0.55);
 }
 
 .hero-content{
     position:relative;
-    z-index:2;
     text-align:center;
-    max-width:1100px;
-    padding:40px;
     color:white;
+    max-width:1000px;
+    padding:20px;
 }
 
 .hero h1{
-    font-family:'Cormorant Garamond', serif;
-    font-size: 4.5rem; 
-    font-weight:700;
-    line-height:1.2;
-    margin-bottom:25px;
-    letter-spacing:1px;
-    text-shadow:0 8px 30px rgba(0,0,0,0.4);
+    font-family:'Cormorant Garamond',serif;
+    font-size:4.5rem;
 }
 
-.subtitle{
-    font-size:1.4rem;
-    color:#d7b98a;
-    margin-bottom:35px;
-    font-weight:500;
-    letter-spacing:0.5px;
-}
+.subtitle{color:#d7b98a;margin-top:10px;}
 
-.description{
-    font-size:1.1rem;
-    line-height:2;
-    max-width:950px;
-    margin:auto;
-    color:rgba(255,255,255,0.92);
-}
+.description{margin-top:20px;line-height:1.8;}
 
-/* MENU */
+/* =========================
+   MENU
+========================= */
 
 nav{
-    position:sticky; 
+    position:sticky;
     top:0;
+    background:#0f1b2d;
+    padding:18px;
     z-index:999;
-    background:rgba(10,20,35,0.94);
-    backdrop-filter:blur(10px);
-    padding:22px 20px;
-    border-bottom:1px solid rgba(255,255,255,0.06);
 }
 
 .nav-container{
-    max-width:1200px;
-    margin:auto;
     display:flex;
     justify-content:center;
-    gap:40px;
+    gap:30px;
+    flex-wrap:wrap;
 }
 
 nav a{
     color:white;
     text-decoration:none;
     font-weight:500;
-    font-size:0.96rem;
-    letter-spacing:0.3px;
-    position:relative;
-    transition:0.3s;
 }
 
-nav a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-10px;
-    width:0%;
-    height:2px;
-    background:#d7b98a;
-    transition:0.3s;
-}
+nav a:hover{color:#d7b98a;}
 
-nav a:hover{
-    color:#d7b98a;
-}
-
-nav a:hover::after{
-    width:100%;
-}
-
-/* MAIN */
+/* =========================
+   SEÇÕES
+========================= */
 
 main{
-    max-width:1250px;
+    max-width:1200px;
     margin:auto;
-    padding:90px 25px;
+    padding:80px 20px;
 }
 
 .section-title{
     text-align:center;
-    margin-bottom:70px;
+    margin-bottom:60px;
 }
 
 .section-title h2{
-    font-family:'Cormorant Garamond', serif;
-    font-size:4rem;
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
     color:#132238;
-    margin-bottom:15px;
 }
 
 .section-title p{
-    max-width:850px;
-    margin:auto;
-    line-height:1.9;
+    margin-top:15px;
     color:#555;
-    font-size:1.05rem;
+    max-width:800px;
+    margin-inline:auto;
 }
 
-/* CARDS */
+/* =========================
+   CARDS
+========================= */
 
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(290px, 1fr));
-    gap:32px;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
 }
 
 .card{
     background:white;
-    border-radius:22px;
-    overflow:hidden;
-    position:relative;
-    transition:0.35s ease;
-    box-shadow:0 10px 35px rgba(0,0,0,0.06);
-    cursor:pointer;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:.3s;
 }
 
-.card:hover{
-    transform:translateY(-12px);
-    box-shadow:0 18px 45px rgba(0,0,0,0.12);
-}
+.card:hover{transform:translateY(-6px);}
 
-.card-top{
-    height:7px;
-    background:linear-gradient(to right, #d7b98a, #9c7c4f);
-}
+/* =========================
+   ARTIGOS
+========================= */
 
-.card-content{
-    padding:38px;
-}
-
-.card h3{
-    font-family:'Cormorant Garamond', serif;
-    font-size:2rem;
-    color:#102038;
-    margin-bottom:18px;
-}
-
-.card p{
-    color:#5c5c5c;
-    line-height:1.9;
-    font-size:0.98rem;
-}
-
-/* DIALOGOS SECTION */
-.dialogos-section {
-    margin-top: 110px;
-
-}
-
-/* HIGHLIGHT SECTION (SOBRE) */
-
-.highlight{
-    margin-top:110px;
-    background:#132238;
-    border-radius:28px;
-    overflow:hidden;
-    position:relative;
-}
-
-.highlight::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(
-        135deg,
-        rgba(255,255,255,0.02),
-        rgba(255,255,255,0)
-    );
-}
-
-.highlight-content{
-    position:relative;
-    z-index:2;
-    padding:70px;
-    color:white;
-}
-
-.highlight h2{
-    font-family:'Cormorant Garamond', serif;
-    font-size:3.5rem;
-    margin-bottom:25px;
-}
-
-.highlight p{
-    max-width:950px;
-    line-height:2;
-    color:rgba(255,255,255,0.88);
-    margin-bottom: 20px;
-}
-
-/* EQUIPE */
-
-/* EQUIPE */
-
-.team{
-    margin-top:35px;
-    max-width:900px;
-}
-
-.team h2{
-    font-family:'Cormorant Garamond', serif;
-    font-size:2.5rem;
-    color:white;
-    margin-bottom:25px;
-}
-
-.member{
-    padding:18px 0;
-    border-bottom:1px solid rgba(255,255,255,.12);
-}
-
-.member:last-child{
-    border-bottom:none;
-}
-
-.member h3{
-    font-family:'Cormorant Garamond', serif;
-    font-size:1.8rem;
-    color:white;
-    margin-bottom:5px;
-}
-
-.member p{
-    color:rgba(255,255,255,.8);
-    margin-bottom:5px;
-}
-
-.member span{
-    color:#d7b98a;
-    font-weight:600;
-}
-    
-/* FOOTER */
-
-footer{
-    margin-top:120px;
-    background:#0b1625;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
-}
-
-footer h3{
-    font-family:'Cormorant Garamond', serif;
-    font-size:2rem;
-    margin-bottom:15px;
-}
-
-footer p{
-    color:rgba(255,255,255,0.7);
-    line-height: 1.8;
-}
-
-footer a {
-    color: #d7b98a;
-    text-decoration: none;
-}
-
-/* RESPONSIVO */
-
-@media(max-width:900px){
-
-.hero h1{
-    font-size:4.5rem;
-}
-
-.section-title h2{
-    font-size:3rem;
-}
-
-.highlight h2{
-    font-size:2.6rem;
-}
-
-.highlight-content{
-    padding:45px;
-}
-
+.cards-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
 }
 
 .card-link{
@@ -352,439 +150,197 @@ footer a {
     color:inherit;
 }
 
-.card{
-    position:relative;
+.article-card{
     background:white;
-    border-radius:20px;
-    padding:35px;
-    transition:0.35s;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.06);
-    border:1px solid rgba(0,0,0,0.05);
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 20px 45px rgba(0,0,0,0.12);
-}
-
-.card-category{
-    color:#b48a56;
-    font-size:0.85rem;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    font-weight:600;
-    margin-bottom:15px;
-}
-
-.card h3{
-    font-family:'Cormorant Garamond', serif;
-    font-size:2rem;
-    margin-bottom:18px;
-    color:#132238;
-}
-
-.card p{
-    color:#555;
-    line-height:1.8;
-    margin-bottom:25px;
-}
-
-.read-more{
-    color:#132238;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.card:hover .read-more{
-    color:#b48a56;
-}
-
-.badge-new{
-    position:absolute;
-    top:20px;
-    right:20px;
-    background:#132238;
-    color:white;
-    padding:7px 14px;
-    border-radius:30px;
-    font-size:0.72rem;
-    font-weight:700;
-    letter-spacing:1px;
-}
-    
-@media(max-width:768px){
-
-.hero{
-    min-height:85vh;
-}
-
-.hero-content{
-    padding:30px;
-}
-
-.hero h1{
-    font-size:3.2rem;
-}
-
-.subtitle{
-    font-size:1.1rem;
-}
-
-.description{
-    font-size:1rem;
-    line-height:1.8;
-}
-
-.nav-container{
-    flex-wrap:wrap;
-    gap:18px;
-}
-
-.section-title h2{
-    font-size:2.5rem;
-}
-
-.highlight-content{
-    padding:35px;
-}
-
-.highlight h2{
-    font-size:2.2rem;
-}
-
-}
-
-.cards-grid{
-    width:90%;
-    max-width:1200px;
-    margin:60px auto 0 auto;
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
-    gap:35px;
-}
-
-.comments {
-    margin-top: 60px;
-    padding-top: 30px;
-    border-top: 1px solid #ddd;
-}
-
-.comments h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem;
-    color: #132238;
-    margin-bottom: 20px;
-}
-
-.rede-container{
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-.rede-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
-}
-
-.rede-card{
-    background:#ffffff;
-    border-radius:12px;
     padding:25px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.10);
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
     transition:.3s;
 }
 
-.rede-card:hover{
-    transform:translateY(-3px);
+.article-card:hover{transform:translateY(-6px);}
+
+.badge{
+    display:inline-block;
+    background:#132238;
+    color:white;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
 }
 
-.rede-card h2{
-    color:#1f4f82;
+/* =========================
+   DIÁLOGOS
+========================= */
+
+.dialogos{
+    margin-top:100px;
+    text-align:center;
+    padding:50px;
+    background:white;
+    border-radius:15px;
 }
 
-.rede-links{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
+/* =========================
+   SOBRE
+========================= */
+
+.sobre{
+    margin-top:100px;
+    background:#132238;
+    color:white;
+    padding:60px;
+    border-radius:20px;
 }
 
-.rede-links a{
-    text-decoration:none;
-    color:#1f4f82;
-    font-weight:600;
+/* =========================
+   EQUIPE
+========================= */
+
+.equipe{
+    margin-top:40px;
 }
 
-.rede-links a:hover{
-    text-decoration:underline;
-} 
+.member{
+    padding:15px 0;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    margin-top:100px;
+    background:#0b1625;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+/* =========================
+   COMMENTS
+========================= */
+
+.comments{
+    margin-top:60px;
+}
 
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <header class="hero">
-
 <div class="hero-content">
-
 <h1>Prisma Econômico</h1>
-
-<p class="subtitle">
-Economia sob múltiplas perspectivas
-</p>
-
+<p class="subtitle">Economia sob múltiplas perspectivas</p>
 <p class="description">
-O Prisma Econômico busca interpretar a dinâmica econômica contemporânea por meio de análises críticas sobre desenvolvimento, macroeconomia, comércio internacional, política econômica e transformações estruturais da economia global. A plataforma reúne textos elaborados por discentes, docentes e egressos da Faculdade de Economia da Universidade Federal de Mato Grosso (UFMT).
+Projeto de divulgação científica da UFMT.
 </p>
-
 </div>
-
 </header>
 
+<!-- MENU -->
 <nav>
-    <div class="nav-container">
-        <a href="#">Início</a>
-        <a href="#artigos">Caderno Econômico</a>
-        <a href="#pesquisas">Artigos e Pesquisas</a>
-        <a href="#dialogos">Diálogos</a>
-        <a href="rede-fe.html">Rede FE</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato">Contato</a>
-    </div>
+<div class="nav-container">
+<a href="#artigos">Caderno Econômico</a>
+<a href="#pesquisas">Artigos</a>
+<a href="#dialogos">Diálogos</a>
+<a href="rede-fe.html">Rede FE</a>
+<a href="#sobre">Sobre</a>
+</div>
 </nav>
 
 <main>
 
-<!-- SEÇÃO CADERNO ECONÔMICO -->
+<!-- CADERNO -->
 <section class="section-title" id="artigos">
-
 <h2>Caderno Econômico</h2>
-
-<p>
-    Espaço dedicado à publicação de ensaios analíticos e textos críticos desenvolvidos a partir de trabalhos de disciplinas. O objetivo é transformar produções de sala de aula em leituras dinâmicas sobre a conjuntura e a teoria econômica.
-</p>
-
+<p>Ensaios e reflexões organizadas por áreas da Economia.</p>
 </section>
-
 
 <section class="cards">
 
 <div class="card">
-<div class="card-top"></div>
-<div class="card-content">
 <h3>História Econômica</h3>
-<p>
-Análises sobre industrialização, formação econômica, transformações estruturais e desenvolvimento histórico das economias nacionais.
-</p>
-</div>
+<p>Formação econômica e transformações estruturais.</p>
 </div>
 
 <div class="card">
-<div class="card-top"></div>
-<div class="card-content">
-<h3>Pensamento Econômico</h3>
-<p>
-Debates sobre escolas econômicas, teoria econômica, autores clássicos e interpretações contemporâneas da economia.
-</p>
-</div>
-</div>
-
-<a href="artigos/economia-politica.html" style="text-decoration:none; color:inherit;">
-
-<div class="card">
-
-<div class="card-top"></div>
-
-<div class="card-content">
-
-<h3>Economia Política</h3>
-
-<p>
-Ensaios sobre capitalismo, relações de trabalho, Estado, desenvolvimento, desigualdade e os desafios econômicos do século XXI.
-</p>
-
-</div>
-
-</div>
-
-</a>
-
-<div class="card">
-<div class="card-top"></div>
-<div class="card-content">
 <h3>Macroeconomia</h3>
-<p>
-Crescimento econômico, inflação, política monetária, política fiscal e dinâmica macroeconômica contemporânea.
-</p>
-</div>
+<p>Inflação, crescimento e política econômica.</p>
 </div>
 
 <div class="card">
-<div class="card-top"></div>
-<div class="card-content">
-<h3>Comércio Internacional</h3>
-<p>
-Integração regional, commodities, geoeconomia, globalização e transformações das relações econômicas internacionais.
-</p>
+<h3>Economia Política</h3>
+<p>Trabalho, Estado, desigualdade e capitalismo contemporâneo.</p>
 </div>
-</div>
-
-<div class="card">
-<div class="card-top"></div>
-<div class="card-content">
-<h3>Desenvolvimento Econômico</h3>
-<p>
-Mudança estrutural, industrialização, desigualdade, restrição externa e estratégias de crescimento de longo prazo.
-</p>
-</div>
-</div>
-    
-</section>
-
-<!-- SEÇÃO ARTIGOS E PESQUISAS -->
-<section class="section-title" id="pesquisas" style="margin-top: 110px;">
-
-    <h2>Artigos e Pesquisas</h2>
-
-    <p>
-        Compilado de relatórios técnicos, resumos expandidos e artigos científicos resultantes de investigações acadêmicas aprofundadas e projetos de iniciação científica vigentes na UFMT.
-    </p>
 
 </section>
 
+<!-- ARTIGOS -->
+<section class="section-title" id="pesquisas" style="margin-top:100px;">
+<h2>Artigos e Pesquisas</h2>
+<p>Trabalhos acadêmicos e publicações.</p>
+</section>
 
-<!-- GRID DE ARTIGOS -->
 <section class="cards-grid">
 
-    <!-- Artigo 1 -->
-    <a href="densidade-capitalista.html" class="card-link">
+<a class="card-link" href="densidade-capitalista.html">
+<div class="article-card">
+<span class="badge">PUBLICAÇÃO</span>
+<h3>Densidade Capitalista</h3>
+<p>Resumo expandido apresentado no ERECO 2026.</p>
+</div>
+</a>
 
-        <div class="card new-post">
-
-            <span class="badge-new">PUBLICAÇÃO</span>
-
-            <div class="card-category">
-                Resumo Expandido
-            </div>
-
-            <h3>
-                Densidade capitalista no século XXI
-            </h3>
-
-            <p>
-                Uma análise crítica acerca da densidade capitalista no estado de Mato Grosso no século XXI.
-            </p>
-
-            <span class="read-more">
-                Ler resumo →
-            </span>
-
-        </div>
-
-    </a>
-
-
-    <!-- Artigo 2 -->
-    <a href="evasao-ensino-superior.html" class="card-link">
-
-        <div class="card new-post">
-
-            <span class="badge-new">NOVA PUBLICAÇÃO</span>
-
-            <div class="card-category">
-                Metodologia de Pesquisa
-            </div>
-
-            <h3>
-                Evasão no Ensino Superior e seus Impactos no Mercado de Trabalho
-            </h3>
-
-            <p>
-                Uma análise sobre as causas da evasão universitária, seus efeitos sobre a qualificação da força de trabalho e os desafios para o desenvolvimento econômico brasileiro.
-            </p>
-
-            <span class="read-more">
-                Ler artigo →
-            </span>
-
-        </div>
-
-    </a>
+<a class="card-link" href="evasao-ensino-superior.html">
+<div class="article-card">
+<span class="badge">PUBLICAÇÃO</span>
+<h3>Evasão no Ensino Superior</h3>
+<p>Impactos no mercado de trabalho brasileiro.</p>
+</div>
+</a>
 
 </section>
 
-<!-- SEÇÃO DIÁLOGOS -->
-<section id="dialogos" class="dialogos-section">
-    <div class="section-title" style="margin-bottom: 0px;">
-        <h2>Diálogos Econômicos</h2>
-        <p>
-            Entrevistas, debates e conversas com professores,
-            pesquisadores, estudantes e profissionais sobre os rumos
-            da economia local, nacional e internacional.
-        </p>
-    </div>
+<!-- DIÁLOGOS -->
+<section class="dialogos" id="dialogos">
+<h2>Diálogos Econômicos</h2>
+<p>Entrevistas e debates (em breve).</p>
 </section>
 
-</section>
-
-<!-- SEÇÃO SOBRE -->
-<section class="highlight" id="sobre">
-
-<div class="highlight-content">
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
 
 <h2>Sobre o Prisma Econômico</h2>
-
 <p>
-    O Prisma Econômico é um espaço dedicado à divulgação da produção intelectual da comunidade acadêmica da Faculdade de Economia da Universidade Federal de Mato Grosso (UFMT). O projeto busca tornar acessíveis os trabalhos, reflexões e pesquisas desenvolvidos por estudantes, docentes e egressos, aproximando a universidade da sociedade.
-
-Vinculado à comunidade da Faculdade de Economia da UFMT, o Prisma busca fortalecer a divulgação científica por meio da publicação de ensaios, artigos, entrevistas e análises sobre temas econômicos, valorizando a diversidade de perspectivas e o pensamento crítico.
-
-A proposta é construir um ambiente acessível e plural para a discussão econômica, estimulando a reflexão crítica, a formação intelectual e a circulação do conhecimento produzido dentro da universidade. 
+Projeto de divulgação científica da UFMT voltado à produção acadêmica em Economia.
 </p>
 
-</div>
-
-<hr class="team-divider">
-
-<section class="team">
-
-<h2>Equipe</h2>
+<div class="equipe">
+<h3>Equipe Editorial</h3>
 
 <div class="member">
-    <h3>Polyana Fernandes Gnutzmann</h3>
-    <p>Estudante de Economia • UFMT</p>
-    <span>Fundadora e Editora</span>
+Polyana Fernandes Gnutzmann — Fundadora
 </div>
 
 <div class="member">
-    <h3>Nome do Colaborador</h3>
-    <p>Estudante de Economia • UFMT</p>
-    <span>Colaborador</span>
+Nome do Colaborador — Colaborador
 </div>
-
-</section>
 
 </div>
 
 </section>
 
-<!-- SEÇÃO DE CONTATO -->
-<footer id="contato">
-    <h3>Contato</h3>
-    <p>Tem alguma sugestão, deseja publicar um texto ou interesse em cooperar com o projeto?</p>
-    <p style="margin-top: 15px; font-weight: 500;">
-        <strong>Polyana F. Gnutzmann</strong><br>
-        E-mail: <a href="mailto:polyana.g.fernandes@gmail.com">polyana.g.fernandes@gmail.com</a>
-    </p>
-    <p style="margin-top: 40px; font-size: 0.85rem; color: rgba(255,255,255,0.4);">
-        © 2026 Prisma Econômico
-    </p>
+<!-- FOOTER -->
+<footer>
+<p>Prisma Econômico © 2026</p>
 </footer>
-
 
 </main>
 
+</body>
+</html>
