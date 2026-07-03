@@ -119,21 +119,47 @@ main{
    CARDS
 ========================= */
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
-}
-
 .card{
     background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-    transition:.3s;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.35s;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    border:1px solid rgba(0,0,0,.04);
 }
 
-.card:hover{transform:translateY(-6px);}
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+}
+
+.card-top{
+    height:6px;
+    background:linear-gradient(90deg,#d7b98a,#9c7c4f);
+}
+
+.card-content{
+    padding:30px;
+}
+
+.card h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
+    color:#132238;
+    margin-bottom:18px;
+}
+
+.card p{
+    line-height:1.8;
+    color:#555;
+}
+
+.card-footer{
+    margin-top:22px;
+    font-size:.9rem;
+    color:#b48a56;
+    font-weight:600;
+}
 
 /* =========================
    ARTIGOS
@@ -274,8 +300,33 @@ Projeto de divulgação científica da UFMT.
 </div>
 
 <div class="card">
+
+<div class="card-top"></div>
+
+<div class="card-content">
+
 <h3>Economia Política</h3>
-<p>Trabalho, Estado, desigualdade e capitalismo contemporâneo.</p>
+
+<p>
+Ensaios sobre capitalismo,
+Estado,
+desigualdade,
+relações de trabalho
+e desenvolvimento.
+</p>
+
+<div class="card-footer">
+
+Última publicação
+
+<br>
+
+<strong>A Mais-Valia em Marx</strong>
+
+</div>
+
+</div>
+
 </div>
 
 </section>
@@ -306,9 +357,38 @@ Projeto de divulgação científica da UFMT.
 </section>
 
 <!-- DIÁLOGOS -->
-<section class="dialogos" id="dialogos">
+<section id="dialogos" class="dialogos">
+
+<div class="section-title">
+
 <h2>Diálogos Econômicos</h2>
-<p>Entrevistas e debates (em breve).</p>
+
+<p>
+
+A economia também se constrói por meio do diálogo.
+
+</p>
+
+</div>
+
+<p style="max-width:850px;margin:auto;line-height:2;color:#555;">
+
+Esta seção reunirá entrevistas com professores,
+pesquisadores,
+economistas e profissionais convidados,
+abordando temas contemporâneos da economia brasileira e internacional.
+
+O objetivo é aproximar diferentes perspectivas e estimular o debate crítico entre estudantes,
+pesquisadores e a sociedade.
+
+</p>
+
+<p style="margin-top:35px;font-weight:600;color:#b48a56;">
+
+Primeira entrevista em breve.
+
+</p>
+
 </section>
 
 <!-- SOBRE -->
