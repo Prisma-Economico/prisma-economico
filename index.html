@@ -346,84 +346,6 @@ footer a {
 }
 
 }
-
-.card-link{
-    text-decoration:none;
-    color:inherit;
-}
-
-.card{
-    position:relative;
-    background:white;
-    border-radius:22px;
-    overflow:hidden;
-    transition:.35s;
-    box-shadow:0 10px 35px rgba(0,0,0,.06);
-    border:1px solid rgba(0,0,0,.05);
-}
-
-.card-top{
-    height:7px;
-    background:linear-gradient(to right,#d7b98a,#9c7c4f);
-}
-
-.card-content{
-    padding:38px;
-}
-
-.new-post{
-    padding:38px;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 20px 45px rgba(0,0,0,0.12);
-}
-
-.card-category{
-    color:#b48a56;
-    font-size:0.85rem;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    font-weight:600;
-    margin-bottom:15px;
-}
-
-.card h3{
-    font-family:'Cormorant Garamond', serif;
-    font-size:2rem;
-    margin-bottom:18px;
-    color:#132238;
-}
-
-.card p{
-    color:#555;
-    line-height:1.8;
-    margin-bottom:25px;
-}
-
-.read-more{
-    color:#132238;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.card:hover .read-more{
-    color:#b48a56;
-}
-
-.badge-new{
-    position:absolute;
-    top:20px;
-    right:20px;
-    background:#132238;
-    color:white;
-    padding:7px 14px;
-    border-radius:30px;
-    font-size:0.72rem;
-    font-weight:700;
-    letter-spacing:1px;
-}
     
 @media(max-width:768px){
 
@@ -467,6 +389,73 @@ footer a {
 
 }
 
+/* =========================
+   ARTIGOS E PESQUISAS
+========================= */
+
+.card-link{
+    text-decoration:none;
+    color:inherit;
+}
+
+.article-card{
+    position:relative;
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    transition:.35s ease;
+    box-shadow:0 10px 35px rgba(0,0,0,.06);
+    border:1px solid rgba(0,0,0,.05);
+    padding:35px;
+}
+
+.article-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+}
+
+.card-category{
+    color:#b48a56;
+    font-size:.85rem;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.article-card h3{
+    font-family:'Cormorant Garamond', serif;
+    font-size:2rem;
+    color:#132238;
+    margin-bottom:18px;
+}
+
+.article-card p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+.read-more{
+    color:#132238;
+    font-weight:600;
+}
+
+.article-card:hover .read-more{
+    color:#b48a56;
+}
+
+.badge-new{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:#132238;
+    color:white;
+    padding:7px 14px;
+    border-radius:30px;
+    font-size:.72rem;
+    font-weight:700;
+}
 .cards-grid{
     width:90%;
     max-width:1200px;
@@ -553,7 +542,15 @@ Economia sob múltiplas perspectivas
 <p class="description">
 O Prisma Econômico busca interpretar a dinâmica econômica contemporânea por meio de análises críticas sobre desenvolvimento, macroeconomia, comércio internacional, política econômica e transformações estruturais da economia global. A plataforma reúne textos elaborados por discentes, docentes e egressos da Faculdade de Economia da Universidade Federal de Mato Grosso (UFMT).
 </p>
+<div class="card-footer">
 
+1 publicação
+
+<br>
+
+<strong>A Mais-Valia em Marx</strong>
+
+</div>
 </div>
 
 </header>
@@ -610,7 +607,7 @@ Debates sobre escolas econômicas, teoria econômica, autores clássicos e inter
 
 <div class="card">
 
-<div class="card-top"></div>
+<div class="article-card">
 
 <div class="card-content">
 
@@ -636,7 +633,7 @@ Crescimento econômico, inflação, política monetária, política fiscal e din
 </div>
 </div>
 
-<div class="card">
+<div class="article-card">
 <div class="card-top"></div>
 <div class="card-content">
 <h3>Comércio Internacional</h3>
