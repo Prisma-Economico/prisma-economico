@@ -212,38 +212,144 @@ main{
 }
     
 /* ===== CARDS DE ENTREVISTAS ===== */
+
 .interview-card{
+
     background:#fff;
     border-radius:20px;
     overflow:hidden;
     box-shadow:0 10px 30px rgba(0,0,0,.06);
     transition:.35s;
-    padding:0;
 }
+
 
 .interview-card:hover{
+
     transform:translateY(-8px);
     box-shadow:0 20px 45px rgba(0,0,0,.12);
+
 }
 
+
+/* barra superior */
+
+.card-top{
+
+    height:8px;
+    background:#132238;
+
+}
+
+
+/* estrutura foto + texto */
+
+.interview-header{
+
+    display:flex;
+    gap:30px;
+    padding:30px;
+    align-items:center;
+
+}
+
+
+/* foto */
+
+.interview-photo{
+
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:50%;
+
+}
+
+
+/* informações */
+
+.interview-info{
+
+    flex:1;
+
+}
+
+
+.card-category{
+
+    font-family:'Inter', sans-serif;
+    font-size:.85rem;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#8b6f47;
+    font-weight:600;
+
+}
+
+
 .interview-card h3{
+
     font-family:'Cormorant Garamond', serif;
     color:#132238;
     font-size:2rem;
-    margin:0 30px 15px;
+    margin:10px 0;
+
 }
 
-.interview-card p,
-.interview-card .cargo,
-.interview-card .card-category,
-.interview-card .read-more{
-    margin-left:30px;
-    margin-right:30px;
+
+.interview-card p{
+
+    font-family:'Inter', sans-serif;
+    color:#555;
+    line-height:1.6;
+    margin:8px 0;
+
 }
 
-.interview-card .read-more{
-    display:block;
-    margin-bottom:30px;
+
+.cargo{
+
+    font-size:.95rem;
+    font-weight:500;
+    color:#777;
+
+}
+
+
+.read-more{
+
+    display:inline-block;
+    margin-top:20px;
+    font-weight:600;
+    color:#132238;
+    transition:.3s;
+
+}
+
+
+.read-more:hover{
+
+    color:#8b6f47;
+
+}
+
+/* responsivo */
+@media(max-width:700px){
+
+    .interview-header{
+
+        flex-direction:column;
+        text-align:center;
+
+    }
+
+
+    .interview-photo{
+
+        width:120px;
+        height:120px;
+
+    }
+
 }
     
 /* DIALOGOS SECTION */
@@ -795,12 +901,14 @@ Mudança estrutural, industrialização, desigualdade, restrição externa e est
 
     <div class="section-title" style="margin-bottom:0;">
         <h2>Diálogos Econômicos</h2>
+
         <p>
             Entrevistas, debates e conversas com professores,
             pesquisadores, estudantes e profissionais sobre os rumos
             da economia local, nacional e internacional.
         </p>
     </div>
+
 
     <section class="cards-grid">
 
@@ -810,29 +918,45 @@ Mudança estrutural, industrialização, desigualdade, restrição externa e est
 
                 <div class="card-top"></div>
 
-                <img src="fotos/juliano-vargas.jpg"
-                     alt="Professor Dr. Juliano Vargas"
-                     class="interview-photo">
+                <div class="interview-header">
 
-                <div class="card-category">
-                    Diálogos Econômicos
+                    <img src="fotos/juliano-vargas.jpg"
+                         alt="Professor Dr. Juliano Vargas"
+                         class="interview-photo">
+
+
+                    <div class="interview-info">
+
+                        <span class="card-category">
+                            Diálogos Econômicos
+                        </span>
+
+
+                        <h3>
+                            Prof. Dr. Juliano Vargas
+                        </h3>
+
+
+                        <p class="cargo">
+                            Professor da Faculdade de Economia da UFPI
+                        </p>
+
+
+                        <p>
+                            Uma conversa sobre mercado de trabalho,
+                            informalidade, juventude, uberização e os
+                            desafios do desenvolvimento brasileiro.
+                        </p>
+
+
+                        <span class="read-more">
+                            Ler entrevista →
+                        </span>
+
+
+                    </div>
+
                 </div>
-
-                <h3>Prof. Dr. Juliano Vargas</h3>
-
-                <p class="cargo">
-                    Professor da Faculdade de Economia da UFPI
-                </p>
-
-                <p>
-                    <p>
-Uma conversa sobre mercado de trabalho, informalidade, juventude, uberização e os desafios do desenvolvimento brasileiro.
-</p>
-                </p>
-
-                <span class="read-more">
-                    Ler entrevista →
-                </span>
 
             </div>
 
