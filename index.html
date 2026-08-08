@@ -291,11 +291,9 @@ main{
 
 /* barra superior */
 
-.card-top{
-
+.interview-card .card-top{
     height:8px;
     background:#132238;
-
 }
 
 
@@ -312,16 +310,23 @@ main{
 /* foto */
 
 .interview-photo{
-
     width:150px;
     height:150px;
     object-fit:cover;
     border-radius:50%;
+    flex-shrink:0;
+}
 
+
+/* ajuste específico da foto do Guilherme */
+
+.professor-guilherme{
+    object-position:center 15%;
 }
 
 
 /* informações */
+
 .interview-info{
     flex:1;
 }
@@ -367,17 +372,19 @@ main{
     color:#8b6f47;
 }
 
+
 /* responsivo */
+
 @media(max-width:700px){
+
     .interview-header{
         flex-direction:column;
         text-align:center;
     }
-    .interview-photo{
 
+    .interview-photo{
         width:120px;
         height:120px;
-
     }
 
 }
