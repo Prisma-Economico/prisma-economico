@@ -276,7 +276,6 @@ main{
 /* ===== CARDS DE ENTREVISTAS ===== */
 
 .interview-card{
-
     background:#fff;
     border-radius:20px;
     overflow:hidden;
@@ -284,12 +283,9 @@ main{
     transition:.35s;
 }
 
-
 .interview-card:hover{
-
-    transform:translateY(-8px);
-    box-shadow:0 20px 45px rgba(0,0,0,.12);
-
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
 }
 
 
@@ -306,12 +302,10 @@ main{
 /* estrutura foto + texto */
 
 .interview-header{
-
     display:flex;
     gap:30px;
-    padding:30px;
+    padding:28px 35px;
     align-items:center;
-
 }
 
 
@@ -637,9 +631,9 @@ footer a {
     max-width:1200px;
     margin:60px auto 0 auto;
 
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
-    gap:35px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
 }
 
 /* ===== ARTIGOS ===== */
