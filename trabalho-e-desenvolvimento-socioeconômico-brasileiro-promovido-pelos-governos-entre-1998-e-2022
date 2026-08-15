@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TRABALHO E DESENVOLVIMENTO SOCIOECONÔMICO BRASILEIRO PROMOVIDO PELOS GOVERNOS ENTRE 1998 E 2022 | Prisma Econômico</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    background:#f5f5f3;
+    color:#222;
+    font-family:'Inter', sans-serif;
+    line-height:2;
+    margin:0;
+}
+
+header{
+    background:#102038;
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:4rem;
+}
+
+.container{
+    max-width:900px;
+    margin:70px auto;
+    background:white;
+    padding:70px;
+    border-radius:20px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.08);
+}
+
+.article-category{
+    color:#9c7c4f;
+    font-weight:600;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.article-title{
+    font-family:'Cormorant Garamond', serif;
+    font-size:3.5rem;
+    color:#132238;
+}
+
+.article-author{
+    margin:40px 0;
+    padding-left:20px;
+    border-left:4px solid #d7b98a;
+}
+
+.article-content p{
+    text-align:justify;
+    margin-bottom:30px;
+}
+
+.back{
+    display:inline-block;
+    margin-top:40px;
+    text-decoration:none;
+    color:#132238;
+    font-weight:600;
+}
+
+.article-author a{
+    color:#9c7c4f;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.article-author a:hover{
+    text-decoration:underline;
+}
+
+.article-content h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:2rem;
+    margin-bottom:25px;
+    color:#132238;
+    text-align:justify;
+}
+
+.pdf-button{
+    display:inline-block;
+    margin-top:30px;
+    background:#132238;
+    color:white;
+    padding:16px 28px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.pdf-button:hover{
+    background:#9c7c4f;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Prisma Econômico</h1>
+
+<p>Artigos, Pesquisas e Resumos</p>
+
+</header>
+
+<main class="container">
+
+<div class="article-category">
+Monografia
+</div>
+
+<h1 class="article-title">
+Trabalho e Desenvolvimento Socioeconômico Brasileiro promovido pelos governos entre 1998 e 2022: Uma Revisão Bibliográfica
+Acerca do Trabalho e dos Impactos que Políticas de
+Aumento do Salário-Mínimo Real Associadas a Políticas Assistencialistas Exercem
+sobre o Desenvolvimento Socioeconômico Nacional
+</h1>
+
+<div class="article-author">
+
+<strong>Autor:</strong><br><br>
+
+<a href="https://lattes.cnpq.br/5766969821707168" target="_blank">
+Newton Giovanni Teixeira Gomes Junior
+</a>
+
+<br><br>
+
+Monografia de graduação apresentada ao Curso de Ciências
+Econômicas da Faculdade de Economia da Universidade Federal
+de Mato Grosso como requisito parcial para obtenção do título de
+Bacharel em Ciências Econômicas sob orientação do Prof. Dr. Leonardo Flauzino de Souza.
+
+</div>
+
+<div class="article-content">
+
+<h2>Resumo</h2>
+
+<p>
+Este estudo empreende uma análise crítica detalhada do panorama histórico e
+contemporâneo do mercado de trabalho no Brasil, com um enfoque particular na interrelação entre o salário-mínimo e o poder aquisitivo dos trabalhadores brasileiros no
+período compreendido entre 1998 e 2022. Este intervalo temporal é notável pelas diversas
+políticas governamentais implementadas, as quais visavam fomentar o desenvolvimento
+socioeconômico do país. Central para esta investigação é a problemática das
+transformações substanciais no âmbito do trabalho e da sociedade ao longo dos séculos,
+com ênfase especial na transição do trabalho escravo para o trabalho livre no Brasil e as
+ramificações socioeconômicas subsequentes. A pesquisa aborda de maneira crítica a
+questão do salário-mínimo e sua correlação com a valorização do trabalho, a urbanização
+precária e expansão das favelas no período pós-abolição da escravatura, e a inadequação
+do salário-mínimo em prover o sustento familiar adequado, apesar dos ajustes
+governamentais. Para tal, foi realizada uma extensa revisão bibliográfica, examinando as
+perspectivas da economia política sob as lentes de teóricos como Weber, Marx e Keynes.
+De forma específica, esta pesquisa investiga a evolução do salário-mínimo real, o papel
+das políticas assistencialistas, e a relação destas com a distribuição de renda e a
+desigualdade socioeconômica. A metodologia adotada neste estudo é a econometria,
+empregando o método de Vetores Autorregressivos (VAR) para modelar a dinâmica e a
+interdependência entre variáveis econômicas. A coleta de dados foi extensiva,
+abrangendo o período de 1998 a 2022, e recorrendo a fontes primárias como o Instituto
+Brasileiro de Geografia e Estatística (IBGE) e a Confederação Nacional da Indústria
+(CNI). Os resultados da pesquisa indicam que as políticas de aumento do salário-mínimo
+real e as medidas assistencialistas implementadas tiveram um impacto significativo no
+desenvolvimento socioeconômico do Brasil. Foram observados um crescimento no
+Produto Interno Bruto (PIB) nominal, avanços no Índice de Desenvolvimento Humano
+(IDH), e uma tendência à redução na desigualdade de renda. Contudo, desafios
+significativos permanecem, particularmente no que tange à proteção social e ao
+desenvolvimento sustentável
+</p>
+
+<a class="pdf-button" href="pdfs/trabalho-e-desenvolvimento-socioeconômico-brasileiro-promovido-pelos-governos-entre-1998-e-2022.pdf" target="_blank">
+📄 Baixar artigo em PDF
+</a>
+
+</div>
+
+<a class="back" href="index.html">
+← Voltar para página inicial
+</a>
+
+<section class="comments">
+    <h2>Comentários</h2>
+
+    <script src="https://giscus.app/client.js"
+        data-repo="prisma-economico/prisma-economico"
+        data-repo-id="R_kgDOSkFWxA"
+        data-category="General"
+        data-category-id="DIC_kwDOSkFWxM4C_BiE"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="pt"
+        crossorigin="anonymous"
+        async>
+    </script>
+</section>
+
+</main>
+
+</body>
+</html>
