@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Concentração e diversificação na agricultura da Baixada Cuiabana: evidências de 50
+anos sob múltiplos indicadores (1974–2024) | Prisma Econômico</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    background:#f5f5f3;
+    color:#222;
+    font-family:'Inter', sans-serif;
+    line-height:2;
+    margin:0;
+}
+
+header{
+    background:#102038;
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:4rem;
+}
+
+.container{
+    max-width:900px;
+    margin:70px auto;
+    background:white;
+    padding:70px;
+    border-radius:20px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.08);
+}
+
+.article-category{
+    color:#9c7c4f;
+    font-weight:600;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.article-title{
+    font-family:'Cormorant Garamond', serif;
+    font-size:3.5rem;
+    color:#132238;
+}
+
+.article-author{
+    margin:40px 0;
+    padding-left:20px;
+    border-left:4px solid #d7b98a;
+}
+
+.article-content p{
+    text-align:justify;
+    margin-bottom:30px;
+}
+
+.back{
+    display:inline-block;
+    margin-top:40px;
+    text-decoration:none;
+    color:#132238;
+    font-weight:600;
+}
+
+.article-author a{
+    color:#9c7c4f;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.article-author a:hover{
+    text-decoration:underline;
+}
+
+.article-content h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:2rem;
+    margin-bottom:25px;
+    color:#132238;
+    text-align:justify;
+}
+
+.pdf-button{
+    display:inline-block;
+    margin-top:30px;
+    background:#132238;
+    color:white;
+    padding:16px 28px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.pdf-button:hover{
+    background:#9c7c4f;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Prisma Econômico</h1>
+
+<p>Artigos, Pesquisas e Resumos</p>
+
+</header>
+
+<main class="container">
+
+<div class="article-category">
+Artigos
+</div>
+
+<h1 class="article-title">
+Concentração e diversificação na agricultura da Baixada Cuiabana: evidências de 50
+anos sob múltiplos indicadores (1974–2024)
+</h1>
+
+<div class="article-author">
+
+<strong>Autores:</strong><br><br>
+
+<a href="" target="_blank">
+Helena Palú Desidério
+</a>
+
+&nbsp;•&nbsp;
+
+<a href="" target="_blank">
+João Victor Pinho de Almeida
+</a>
+
+&nbsp;•&nbsp;
+
+<a href="" target="_blank">
+Ana Júlia Moura de Alcântara
+</a>
+
+&nbsp;•&nbsp;
+
+<a href="" target="_blank">
+Dra. Sheila Cristina Ferreira Leite
+</a>
+
+<br><br>
+
+O presente artigo foi elaborado pelos discentes da Faculdade de Economia da Universidade Federal de Mato Grosso (UFMT), Helena Palú Desidério, João Victor Pinho de Almeida e Ana Júlia Moura de Alcântara,
+sob orientação do profª. Dra. Sheila Cristina Ferreira Leite e foi apresentado no 64º Congresso da Sociedade Brasileira de Economia, Administração e Sociologia Rural (SOBER) e na 1ª edição da Semana da Economia da UFMT - SEMECO 2026.
+
+</div>
+
+<div class="article-content">
+
+<h2>Resumo</h2>
+
+<p>
+Em cinquenta anos, a estrutura produtiva da Baixada Cuiabana percorreu trajetória de reconcentração agrícola,
+com a soja passando de ausente até 1977 a dois terços da área colhida em 2024.
+Essa trajetória, contudo, não foi uniforme entre municípios nem linear ao longo do tempo. A partir de
+indicadores de concentração, diversificação e desigualdade, calculados sobre três variáveis-base (área
+colhida, valor real da produção e área de primeira safra), a análise examina a estrutura produtiva dos
+13 municípios da região com dados da PAM/IBGE (1974–2024), reagrupados em 10 Áreas Mínimas
+Comparáveis. O teste de Bai-Perron identifica três fases: concentração elevada (1974–1986), menor
+concentração (1987–2004) e reconcentração acelerada (2005–2024). O coeficiente de concordância de
+Kendall revela que a variável-base altera o ranking municipal mais do que a escolha do indicador. A
+correlação entre o índice de Shannon e a escala produtiva é negativa em todos os 51 anos da série, porém
+municípios mais diversificados cultivam produtos de maior valor unitário por área, embora sobre escala
+territorial muito reduzida, o que resulta em baixo valor total de produção. A diversificação observada na
+Baixada Cuiabana está associada a restrições estruturais, não a uma estratégia de desenvolvimento
+</p>
+
+<p>
+<strong>Palavras-chave:</strong>diversificação agrícola, sensibilidade metodológica, concentração produtiva, Baixada
+Cuiabana, indicadores
+</p>
+
+<a class="pdf-button" href="pdfs/Concentracao-e-diversificacao-na-agricultura-da-baixada-cuiabana-evidências-de-50-anos-sob-multiplos-indicadores-1974–2024.pdf" target="_blank">
+📄 Baixar artigo em PDF
+</a>
+
+</div>
+
+<a class="back" href="index.html">
+← Voltar para página inicial
+</a>
+
+<section class="comments">
+    <h2>Comentários</h2>
+
+    <script src="https://giscus.app/client.js"
+        data-repo="prisma-economico/prisma-economico"
+        data-repo-id="R_kgDOSkFWxA"
+        data-category="General"
+        data-category-id="DIC_kwDOSkFWxM4C_BiE"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="pt"
+        crossorigin="anonymous"
+        async>
+    </script>
+</section>
+
+</main>
+
+</body>
+</html>
